@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATEC Conference Leads Tracker</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/14.0.0/material-components-web.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #1976D2;
+            color: white;
+            padding: 16px;
+            border-radius: 4px;
+            margin-bottom: 24px;
+        }
+        .card {
+            background: white;
+            border-radius: 4px;
+            padding: 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        }
+        .summary-section {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 4px;
+            margin: 16px 0;
+            border-left: 4px solid #1976D2;
+        }
+        .high-priority { border-left: 4px solid #f44336; }
+        .medium-priority { border-left: 4px solid #fb8c00; }
+        .low-priority { border-left: 4px solid #2196f3; }
+        .priority-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .high-badge {
+            background: #ffebee;
+            color: #c62828;
+        }
+        .medium-badge {
+            background: #fff3e0;
+            color: #ef6c00;
+        }
+        .low-badge {
+            background: #e3f2fd;
+            color: #1565c0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #eeeeee;
+        }
+        th {
+            background: #f5f5f5;
+            font-weight: 500;
+        }
+        .section-title {
+            color: #1976D2;
+            margin: 24px 0 16px 0;
+            font-weight: 500;
+            font-size: 1.5em;
+        }
+        .story-title {
+            color: #455a64;
+            font-weight: 500;
+            margin-top: 16px;
+        }
+        .story-content {
+            padding: 16px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            margin: 8px 0;
+        }
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            background: #0077b5;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 4px 0;
+            transition: background-color 0.3s;
+        }
+        .social-link:hover {
+            background: #006097;
+        }
+        .contact-info {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 4px;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>GATEC Conference Leads Tracker</h1>
+            <p>Total Leads: 5 (High: 1, Medium: 3, Low: 1)</p>
+        </div>
+
+        <!-- High Priority Lead -->
+        <div class="section-title">HIGH PRIORITY LEAD</div>
+        <div class="card high-priority">
+            <div class="priority-badge high-badge">HIGH PRIORITY</div>
+            <h2>Russell Palmer - GALILEO Support Services</h2>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/rlpants/" class="social-link" target="_blank">LinkedIn Profile</a>
+            </div>
+            <div class="story-title">Meeting Summary</div>
+            <div class="story-content">
+                Met Russell during the GATEC Conference where he expressed urgent need for SSO integration. 
+                Their team is currently struggling with implementing SSO in their Ruby on Rails application 
+                for Classroom Claude integration. They need immediate technical assistance to resolve these 
+                integration challenges.
+            </div>
+            <table>
+                <tr>
+                    <td><strong>Position:</strong></td>
+                    <td>Assistant Director, GALILEO Support Services</td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td>rlpalmer@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><strong>Technical Need:</strong></td>
+                    <td>SSO Integration with Classroom Claude</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Medium Priority Leads -->
+        <div class="section-title">MEDIUM PRIORITY LEADS</div>
+        
+        <!-- Meghan Crider -->
+        <div class="card medium-priority">
+            <div class="priority-badge medium-badge">MEDIUM PRIORITY</div>
+            <h2>Meghan Crider - Viperline Solutions/Decept10</h2>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/meghan-c-7a55a1223/" class="social-link" target="_blank">LinkedIn Profile</a>
+            </div>
+            <div class="story-title">Meeting Summary</div>
+            <div class="story-content">
+                Connected with Meghan regarding their network filtering solution for students. 
+                Their company has established development teams in Dubai and Jordan. Looking at future expansion 
+                possibilities with their SIEM-SOC-XDR security solutions.
+            </div>
+            <table>
+                <tr>
+                    <td><strong>Position:</strong></td>
+                    <td>Vice President of Operations</td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td>m.crider@decept10.com</td>
+                </tr>
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td>205.577.7432</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Nathan Dupree -->
+        <div class="card medium-priority">
+            <div class="priority-badge medium-badge">MEDIUM PRIORITY</div>
+            <h2>Nathan Dupree - SureLock Technology</h2>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/nathan-dupree-0330121a6/" class="social-link" target="_blank">LinkedIn Profile</a>
+            </div>
+            <div class="story-title">Meeting Summary</div>
+            <div class="story-content">
+                Met Nathan during the conference. They don't have an internal development team but provide IT solutions.
+                Discussed possibility of Discern handling their development needs. Showed interest in outsourcing development
+                work and establishing a partnership.
+            </div>
+            <table>
+                <tr>
+                    <td><strong>Position:</strong></td>
+                    <td>Account Executive</td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td>ndupree@surelocktechnology.com</td>
+                </tr>
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td>706-406-1774</td>
+                </tr>
+                <tr>
+                    <td><strong>Address:</strong></td>
+                    <td>4908 Golden Parkway Ste 700, Buford, GA 30518</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Noah Fichter -->
+        <div class="card low-priority">
+            <div class="priority-badge low-badge">LOW PRIORITY</div>
+            <h2>Noah Fichter - Scout</h2>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/noahfichter/" class="social-link" target="_blank">LinkedIn Profile</a>
+            </div>
+            <div class="story-title">Meeting Summary</div>
+            <div class="story-content">
+                Brief interaction with Noah regarding their new product launch. Small team of two developers,
+                currently in early stages. Limited current interest but potential future opportunity.
+            </div>
+            <table>
+                <tr>
+                    <td><strong>Position:</strong></td>
+                    <td>Founder & CEO</td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td>noah@teachwithscout.com</td>
+                </tr>
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td>(917) 825-7129</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section-title">FOLLOW-UP ACTIONS</div>
+        <div class="card">
+            <table>
+                <tr>
+                    <th>Lead</th>
+                    <th>Next Action</th>
+                    <th>Timeline</th>
+                </tr>
+                <tr>
+                    <td>Russell Palmer (GALILEO)</td>
+                    <td>Send SSO integration proposal & schedule technical call</td>
+                    <td>This Week</td>
+                </tr>
+                <tr>
+                    <td>Meghan Crider (Decept10)</td>
+                    <td>Follow up on security integration possibilities</td>
+                    <td>Next 2 Weeks</td>
+                </tr>
+                <tr>
+                    <td>Nathan Dupree (SureLock)</td>
+                    <td>Prepare development partnership proposal</td>
+                    <td>Next 2 Weeks</td>
+                </tr>
+                <tr>
+                    <td>Noah Fichter (Scout)</td>
+                    <td>Add to quarterly check-in schedule</td>
+                    <td>Next Quarter</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
